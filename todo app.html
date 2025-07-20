@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily TODO App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Daily Task Manager</h1>
+    
+    <div class="input-section">
+      <select id="taskDropdown">
+        <option value="" disabled selected>Select a predefined task</option>
+        <option value="Dancing">Dancing</option>
+        <option value="Singing">Singing</option>
+        <option value="Workout">Workout</option>
+        <option value="Reading">Reading</option>
+      </select>
+
+      <input type="text" id="customTask" placeholder="Or enter custom task..." />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
